@@ -1,7 +1,7 @@
 services:
   build:
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
     container_name: realtime-standalone
     ports:
