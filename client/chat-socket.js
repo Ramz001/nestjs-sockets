@@ -1,4 +1,7 @@
-const socket = io("http://localhost:3000")
+const socket = io("http://localhost:3000", {
+  withCredentials: false,
+  transports: ['websocket', 'polling']
+})
 
 const message = document.getElementById('message');
 const messages = document.getElementById('messages');
